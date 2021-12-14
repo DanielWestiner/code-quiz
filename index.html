@@ -5,9 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It's Quiz Time!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+    <main class="container"></main>
+        <h1 class="title-text">Test Your Knowledge!</h1>
+        <div>
+            <p id="todo">See how many questions you can correctly answer before time runs out.  Incorrect guesses will subtract 10 seconds from your clock, so answer carefully!
+
+            </p>
+        </div>
+    <section class="quiz">
+        <div>
+            <button type="button" class="button" id="start">START</button>
+        </div>
+    </section>
+    <section>
+        <div class="options" id="options"></div>
+    </section>
+    <section class="answers">
+        <div>
+            <button type="button" class="button" id="answer1"></button>
+            <button type="button" class="button" id="answer2"></button>
+            <button type="button" class="button" id="answer3"></button>
+            <button type="button" class="button" id="answer4"></button>
+        </div>
+    </section>
+    <section class="clock" id="clock">
+
+    </section>
+    <section class="records" id="records">
+        <input type="text" id="initials" placeholder="Enter Your Initials">
+        <button class="button" type="button" id="enter-initials"></button>
+    </section>
+    <footer>
+
+    </footer>
+
     <script src="./assets/script.js"></script>
 </body>
 </html>
