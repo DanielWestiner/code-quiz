@@ -53,9 +53,12 @@ let questIndex = null;
 let userScore = 0;
 
 
-function beginGame (event) {
+function beginGame () {
     document.getElementById ('start').style.display = 'none';
     document.getElementById('todo').style.display = 'none';
+//
+    document.getElementById('records').style.display = "none";
+//
     questIndex = 0;
     nextQuestion();
     document.getElementById('options').style.display = "block";
@@ -112,8 +115,8 @@ function gameOver() {
 // Players can enter initials to submit score and store to local storage
 function enterScore() {
     let initials = document.getElementById('initials').value;
-    let scores = JSON.parse(localStorage.getItem('scores'));
-        score.push({
+    let scores = [];
+        scores.push({
             initials: initials,
             score: userScore
         })
@@ -130,13 +133,13 @@ function showHighScores (scoreStore) {
     for (let i = 0; i < scoreStore.length; i++) {
         let currentScore = scoreStore[i];
         let listEl = document.createElement('li');
-        listEl.textContent = `${currentScore.initials} ::: ${currentScore.score}`
-        userList.appendChild(listElement)
+        listEl.textContent = `${currentScore.initials} ........ ${currentScore.score}`
+        userList.appendChild(listEl)
     }
 
     document.getElementById('scores').textContent = ""
     document.getElementById('scores').appendChild(enterUser)
-    document.getElementById('scores').appendChild(listWrapper);
+    document.getElementById('scores').appendChild(userList);
     document.getElementById('clock').style.display = "none";
 
 }

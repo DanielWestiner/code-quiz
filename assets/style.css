@@ -7,3 +7,33 @@
 body {
   font-family: "Bakbak One", sans-serif;
 }
+
+
+#answers {
+  display: none;
+}
+
+p {
+  font-size: 20px;
+
+}
+
+.options {
+  font-size: 20px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+
+#clock {
+  font-size: 25px;
+  padding-top: 40px;
+}
+
+body {
+background: rgb(220,236,200);
+background: linear-gradient(90deg, rgba(220,236,200,1) 0%, rgba(93,9,121,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.btn-dark{
+  font-size 16px;
+}
