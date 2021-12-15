@@ -37,3 +37,25 @@ background: linear-gradient(90deg, rgba(220,236,200,1) 0%, rgba(93,9,121,1) 100%
 .btn-dark{
   font-size 16px;
 }
+
+.response {
+  padding-top: 35px;
+}
+
+.rounded-sm {
+  font-size: 21px;
+}
+
+.options {
+  font-size: 28px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+#records {
+  padding-top: 10em;
+}
+
+#scores {
+  font-size: 25px;
+}
