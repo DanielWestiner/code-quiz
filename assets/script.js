@@ -47,7 +47,7 @@ let timer = function () {
 };
 
 // Function to Begin the Game
-let questIndex = null;
+let questIndex;
 let userScore = 0;
 
 function beginGame() {
